@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="UwpWithDirectX11Sample.DirectXPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpWithDirectX11Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row ="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column ="0" Background="#ffddffdd">
+                <SwapChainPanel x:Name="swapChainPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Grid>
+            <Grid Grid.Column ="1" Background="#ffddddff">
+                <Button x:Name="Button00" Content="Reset camera" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="133" Click="Button00_Click"/>
+                <Button x:Name="Button01" Content="Add Object" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,46,0,0" Width="133" Click="Button01_Click"/>
+                <Button x:Name="Button02" Content="Remove Object" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,82,0,0" Width="133" Click="Button02_Click"/>
+                <Button x:Name="Button03" Content="button3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,118,0,0" Width="133" Click="Button03_Click"/>
+                <Button x:Name="Button04" Content="button4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,154,0,0" Width="133" Click="Button04_Click"/>
+                <Button x:Name="Button05" Content="button5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,190,0,0" Width="133" Click="Button05_Click"/>
+                <Button x:Name="Button06" Content="button6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,226,0,0" Width="133" Click="Button06_Click"/>
+                <Button x:Name="Button07" Content="button7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,262,0,0" Width="133" Click="Button07_Click"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row ="1" Background="#ffffdddd">
+        </Grid>
+    </Grid>
+</Page>
