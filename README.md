@@ -1,5 +1,5 @@
 # UwpDirectX11Sample
 Windows10  
-UWP Application  
-C++  
+UWP  
+C++/CX  
 DirectX11  
